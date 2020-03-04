@@ -19,5 +19,5 @@ echo "0 results";
 echo "query error";
 }
 $conn->close();
-var_dump($rooms);
+// var_dump($rooms);
  ?>
