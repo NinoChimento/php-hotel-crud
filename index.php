@@ -8,13 +8,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="dist/app.css">
     <title></title>
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <table>
+          <table class="table">
             <th>Id</th>
             <th>Numero</th>
             <th>Piano</th>

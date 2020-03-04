@@ -1,7 +1,7 @@
 <?php
 include __DIR__ ."/../account.php";
   $idStanza = $_POST["id"];
-  var_dump($idStanza);die();
+  var_dump($idStanza);
   $conn = new mysqli($servername, $username, $password, $dbname);
   if ($conn && $conn->connect_error) {
   echo "Connection failed: " . $conn->connect_error;
