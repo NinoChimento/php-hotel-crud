@@ -22,18 +22,18 @@
             <th>Uptade</th>
             <th>Cancella</th>
           <?php if (!empty(rooms)) {
-            foreach ($rooms as $stanza) {
-              var_dump($stanza);
-            }
-          } ?>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href="#">Vedi</a> </td>
-            <td><a href="#">Uptade</a> </td>
-            <td></td>
-          </tr>
+            foreach ($rooms as $stanza) { ?>
+              <tr>
+                <td> <?php echo $stanza["id"] ?></td>
+                <td> <?php echo $stanza["room_number"] ?></td>
+                <td> <?php echo $stanza["floor"] ?></td>
+                <td><a href="#">Vedi</a> </td>
+                <td><a href="#">Uptade</a> </td>
+                <td></td>
+              </tr>
+            <?php } ?>
+          <?php } ?>
+
           </table>
         </div>
       </div>
