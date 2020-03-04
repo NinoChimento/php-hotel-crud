@@ -1,6 +1,6 @@
 <?php
   include __DIR__ . "/server_show.php";
-  include __DIR__ ."/../header.php";
+  include __DIR__ ."/../partials/header.php";
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

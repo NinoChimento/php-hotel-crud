@@ -2,11 +2,11 @@
 
 <?php
   include __DIR__ ."/server.php";
-  include __DIR__ ."/header.php"
+  include __DIR__ ."/partials/header.php"
  ?>
 
   <body>
-    <h1 class="text-align-center">Stanze Albergo</h1>
+    <h1 class="text-center">Stanze Albergo</h1>
     <div class="container">
       <div class="row">
         <div class="col-12">
