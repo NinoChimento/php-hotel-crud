@@ -2,15 +2,9 @@
 
 <?php
   include __DIR__ ."/server.php";
-
+  include __DIR__ ."/header.php"
  ?>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="dist/app.css">
-    <title></title>
-  </head>
+
   <body>
     <div class="container">
       <div class="row">
