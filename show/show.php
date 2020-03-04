@@ -9,6 +9,7 @@
     <title></title>
   </head>
   <body>
+    <h1 class="text-center">Dettaglio Stanza</h1>
     <div class="container">
       <div class="row">
         <div class="col-12">
