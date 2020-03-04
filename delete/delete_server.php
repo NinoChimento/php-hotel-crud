@@ -6,7 +6,7 @@ include __DIR__ ."/../account.php";
   if ($conn && $conn->connect_error) {
   echo "Connection failed: " . $conn->connect_error;
   }
-  // $sql = "DELETE FROM stanze WHERE id = ;";
+  $sql = "DELETE FROM `stanze` WHERE `id` = $idStanza ;";
   $result = $conn->query($sql);
   if ($result && $result->num_rows > 0) {
   // output data of each row
