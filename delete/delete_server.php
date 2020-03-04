@@ -1,10 +1,12 @@
 <?php
 include __DIR__ ."/../account.php";
+  $idStanza = $_POST["id"];
+  var_dump($idStanza);die();
   $conn = new mysqli($servername, $username, $password, $dbname);
   if ($conn && $conn->connect_error) {
   echo "Connection failed: " . $conn->connect_error;
   }
-  $sql = "SELECT id, room_number, floor FROM stanze";
+  // $sql = "DELETE FROM stanze WHERE id = ;";
   $result = $conn->query($sql);
   if ($result && $result->num_rows > 0) {
   // output data of each row
