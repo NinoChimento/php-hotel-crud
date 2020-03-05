@@ -6,6 +6,7 @@
  ?>
 
   <body>
+    <?php include __DIR__."/navbar.php" ?>
     <h1 class="text-center">Stanze Albergo</h1>
     <div class="container">
       <div class="row">
