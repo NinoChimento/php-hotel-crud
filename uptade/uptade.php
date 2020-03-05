@@ -21,7 +21,7 @@
  ?>
 
  <body>
-   <?php include __DIR__."/../navbar.php" ?>
+   <?php include __DIR__."/../partials/navbar.php" ?>
    <form class="form-group" action="uptade_server.php" method="post">
      <div class="form-group">
        <label for="">Numero stanza</label>
