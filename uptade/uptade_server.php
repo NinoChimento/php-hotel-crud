@@ -4,7 +4,6 @@
   $roomNumber = $_POST["room_number"];
   $roomFloor = $_POST["floor_number"];
   $roomBeds = $_POST["beds"];
-  echo $roomId;
   if (empty($roomId)) {
     die("numero id sbagliato");
   }
