@@ -5,21 +5,37 @@
   if (empty($idRoom)) {
     die("errore id");
   }
-  var_dump( $idRoom);
-  $sql = "SELECT id, room_number, floor FROM stanze where id = $idRoom";
+  $sql = "SELECT * FROM stanze where id = $idRoom";
   $result = $conn->query($sql);
   if ($result && $result->num_rows > 0) {
   // output data of each row
-  $rooms=[];
+  $room=[];
   while($row = $result->fetch_assoc()) {
 
-  $rooms[]= $row;
+  $room = $row;
   }
-  } elseif ($result) {
-  echo "0 results";
-  } else {
-  echo "query error";
   }
   $conn->close();
-  var_dump($rooms);
+
+  include __DIR__ ."/../partials/header.php";
  ?>
+
+ <body>
+   <?php include __DIR__."/../navbar.php" ?>
+   <form class="form-group" action="uptade_server.php" method="post">
+     <div class="form-group">
+       <label for="">Numero stanza</label>
+       <input type="number" name="room_number" value="<?php echo $room["room_number"]; ?>">
+     </div>
+     <div class="form-group">
+       <label for="Numero piano">Numero piano</label>
+       <input type="number" name="floor_number" value="<?php echo $room["floor"]; ?>">
+     </div>
+     <div class="form-group">
+       <label for="Numero Letti">Numero posti letto</label>
+       <input type="number" name="beds" value="<?php echo $room["beds"]; ?>">
+     </div>
+     <button type="submit" class="btn btn-primary">Salva</button>
+   </form>
+
+ </body>
