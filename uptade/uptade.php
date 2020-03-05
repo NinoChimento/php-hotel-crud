@@ -25,18 +25,18 @@
    <form class="form-group" action="uptade_server.php" method="post">
      <div class="form-group">
        <label for="">Numero stanza</label>
-       <input type="number" name="room_number" value="<?php echo $room["room_number"]; ?>">
+       <input class="form-control" type="number" name="room_number" value="<?php echo $room["room_number"]; ?>">
      </div>
      <div class="form-group">
        <label for="Numero piano">Numero piano</label>
-       <input type="number" name="floor_number" value="<?php echo $room["floor"]; ?>">
+       <input class="form-control" type="number" name="floor_number" value="<?php echo $room["floor"]; ?>">
      </div>
      <div class="form-group">
        <label for="Numero Letti">Numero posti letto</label>
-       <input type="number" name="beds" value="<?php echo $room["beds"]; ?>">
+       <input class="form-control" type="number" name="beds" value="<?php echo $room["beds"]; ?>">
      </div>
      <input type="hidden" name="id" value="<?php echo $room["id"]; ?>">
-     <input class="btn-danger" type="submit" name="Salva" value="salva">
+     <input class="btn-danger form-control" type="submit" name="Salva" value="salva">
    </form>
 
  </body>
