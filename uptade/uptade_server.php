@@ -18,4 +18,6 @@
     die("numero letti vuoto");
   }
   $sql = "UPDATE stanze SET room_number = $roomNumber,floor = $roomFloor,beds = $roomBeds WHERE ID = $roomId";
+  $result = $conn->query($sql);
+  header("location:http://localhost/php-hotel-crud/show/show.php?id=$roomId");
  ?>
