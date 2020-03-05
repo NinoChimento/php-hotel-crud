@@ -2,4 +2,9 @@
 $servername = "localhost";
 $username = "root";
 $password = "root";
-$dbname = "hotels"; ?>
+$dbname = "hotels";
+
+$local ="http://localhost/";
+$cartella = "php-hotel-crud/";
+$directory = $local+$cartella;
+?>

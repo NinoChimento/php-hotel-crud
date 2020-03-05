@@ -9,6 +9,7 @@
     <title></title>
   </head>
   <body>
+    <?php include __DIR__."/../navbar.php" ?>
     <h1 class="text-center">Dettaglio Stanza</h1>
     <div class="container">
       <div class="row">
