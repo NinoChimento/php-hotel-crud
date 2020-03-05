@@ -17,4 +17,5 @@
   if (empty($roomBeds)) {
     die("numero letti vuoto");
   }
+  $sql = "UPDATE stanze SET room_number = $roomNumber,floor = $roomFloor,beds = $roomBeds WHERE ID = $roomId";
  ?>
