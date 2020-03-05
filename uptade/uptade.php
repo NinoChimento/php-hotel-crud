@@ -35,7 +35,8 @@
        <label for="Numero Letti">Numero posti letto</label>
        <input type="number" name="beds" value="<?php echo $room["beds"]; ?>">
      </div>
-     <button type="submit" class="btn btn-primary">Salva</button>
+     <input type="hidden" name="id" value="<?php echo $room["id"]; ?>">
+     <input class="btn-danger" type="submit" name="Salva" value="salva">
    </form>
 
  </body>
