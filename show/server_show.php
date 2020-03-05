@@ -1,10 +1,7 @@
 <?php
-include __DIR__ ."/../account.php";
+include __DIR__ ."/../database.php";
 $idStanza = $_GET["id"];
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn && $conn->connect_error) {
-echo "Connection failed: " . $conn->connect_error;
-}
+
 $sql = "SELECT * FROM stanze Where id = $idStanza";
 $result = $conn->query($sql);
 if ($result && $result->num_rows > 0) {
