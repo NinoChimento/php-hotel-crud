@@ -12,4 +12,7 @@
   if (empty($roomBeds)) {
     die("devi riempire tutti i campi");
   }
+  $sql = "INSERT INTO stanze (room_number,floor,beds) VALUES ('$roomNumber','$roomFloor','$roomBeds')";
+  $result = $conn->query($sql);
+  header("location:http://localhost/php-hotel-crud/index.php");
  ?>
