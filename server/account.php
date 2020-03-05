@@ -7,5 +7,4 @@ $dbname = "hotels";
 $local ="localhost/";
 $cartella = "php-hotel-crud/";
 $directory = $local.$cartella."index.php";
-echo $directory;
 ?>
