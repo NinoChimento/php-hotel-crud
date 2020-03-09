@@ -2,6 +2,7 @@
 include_once __DIR__."/prenotation_server.php";
 ?>
 <body>
+  <?php include __DIR__."/../partials/header.php" ?>
   <?php include __DIR__."/../partials/navbar.php" ?>
   <h1 class="text-center">Prenotazioni Ospiti</h1>
   <div class="container">
@@ -10,7 +11,6 @@ include_once __DIR__."/prenotation_server.php";
         <table class="table">
           <th>Id</th>
           <th>Id prenotazione</th>
-          <th>Piano</th>
           <th>created_at</th>
           <th>updated_at</th>
           <th>vedi</th>
