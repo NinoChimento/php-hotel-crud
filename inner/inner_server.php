@@ -15,7 +15,10 @@
   if (empty($roomBeds)) {
     die("devi riempire tutti i campi");
   }
-  $sql = "INSERT INTO stanze (room_number,floor,beds,created_at,updated_at) VALUES ('$roomNumber','$roomFloor','$roomBeds','$dataArrive','$dataDeparture')";
-  $result = $conn->query($sql);
+    $stmt = $conn->prepare("INSERT INTO stanze (room_number,floor,beds,created_at,updated_at) VALUES ('$roomNumber','$roomFloor','$roomBeds','$dataArrive','$dataDeparture')");
+    $stmt->bind_param("iiiss", $roomNumber, $roomFloor, $roomBeds,$dataArrive,$dataDeparture);
+    $stmt->execute();
+  // $sql = "INSERT INTO stanze (room_number,floor,beds,created_at,updated_at) VALUES ('$roomNumber','$roomFloor','$roomBeds','$dataArrive','$dataDeparture')";
+  // $result = $conn->query($sql);
   header("location:http://localhost/php-hotel-crud/index.php");
  ?>
