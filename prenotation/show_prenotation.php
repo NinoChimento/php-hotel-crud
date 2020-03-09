@@ -31,8 +31,8 @@ include __DIR__ ."/../partials/header.php";
         <ul class="list-group">
             <li class="list-group-item"> Id:<?php echo $prenotazione["id"]; ?></li>
             <li class="list-group-item">room_number:<?php echo $prenotazione["room_number"]; ?></li>
-            <li class="list-group-item">floor:<?php echo $prenotazione["name"]; ?></li>
-            <li class="list-group-item">beds:<?php echo $prenotazione["lastname"]; ?></li>
+            <li class="list-group-item">name:<?php echo $prenotazione["name"]; ?></li>
+            <li class="list-group-item">lastname:<?php echo $prenotazione["lastname"]; ?></li>
 
         </ul>
       </div>
